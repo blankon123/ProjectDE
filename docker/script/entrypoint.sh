@@ -1,4 +1,4 @@
-#!/usr/bin/env bash
+#!/bin/bash
 airflow db init
 echo "AUTH_ROLE_PUBLIC = 'Admin'" >> webserver_config.py
 airflow connections add 'postgres_tgs' \
